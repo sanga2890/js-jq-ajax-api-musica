@@ -32,7 +32,26 @@ $(document).ready(function() {
                 // stampo tutto in pagina;
                 $('.cds-container.container').append(html);
             }
-        
+
+            // BONUS:
+            // aggiunfo funzione per sceglire genere;
+            $('#genre').change(function () {
+                // dichiaro una variabile che rappresenta il singolo elemento nell'elemento select;
+                var genre = $(this).val();
+
+                // nascondi tutte le schede;
+                $('.cd').hide();
+                // aggiungo la classe al div #genre in base al genere selezionato e lo mostro;
+                $('.' + genre).show();
+
+                // se seleziono 'All' mostro tutte le schede;
+                if (genre == 'All') {
+                    $('.cd').show();
+                }
+            });
+
+
+
         },
         'error': function() {
             alert('si è verificato un errore');
