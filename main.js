@@ -21,8 +21,13 @@ $(document).ready(function() {
                     'poster' : dischi[i].poster,
                     // recupero l'autore;
                     'author' : dischi[i].author,
+                    // recupero il titolo;
+                    'title' : dischi[i].title,
                     // recupero l'anno;
-                    'year' : dischi[i].year
+                    'year' : dischi[i].year,
+                    // recupero il genere musicale;
+                    'genre' : dischi[i].genre
+
 
                 }
                 var html = template(context);
