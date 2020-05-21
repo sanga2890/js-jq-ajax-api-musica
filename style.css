@@ -24,6 +24,25 @@ header {
 header img {
     height: 50px;
     margin-top: 10px;
+    float: left;
+}
+
+.container span.filter{
+    float: right;
+    line-height: 70px;
+    margin-right: 20px;
+    color: gray;
+}
+select {
+    float: right;
+    line-height: 70px;
+    margin-top: 25px;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
 .cds-container {

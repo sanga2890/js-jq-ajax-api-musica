@@ -12,10 +12,18 @@
         <header>
             <div class="container">
                 <img src="logo.png" alt="logo" />
+                <select id="genre" name="genre-list">
+                    <option value="all">All</option>
+                    <option value="jazz">Jazz</option>
+                    <option value="pop">Pop</option>
+                    <option value="rock">Rock</option>
+                    <option value="Metal">Metal</option>
+                </select>
+                <span class="filter">Filtra per genere: </span>
             </div>
         </header>
 
-        <div class="cds-container container">
+        <div class="cds-container container clearfix">
             <!-- creo template con handlebars -->
             <script id="my-template" type="text/x-handlebars-template">
                 <div class="cd">

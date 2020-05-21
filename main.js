@@ -27,15 +27,12 @@ $(document).ready(function() {
                     'year' : dischi[i].year,
                     // recupero il genere musicale;
                     'genre' : dischi[i].genre
-
-
                 }
                 var html = template(context);
                 // stampo tutto in pagina;
                 $('.cds-container.container').append(html);
             }
-
-
+        
         },
         'error': function() {
             alert('si è verificato un errore');
